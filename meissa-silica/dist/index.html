@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monaco`s sandy beach</title>
+</head>
+<body>
+    <div id="container" style="width:800px;height:600px;border:1px solid #ccc"></div>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+    <script>
+        $(function () {
+          var socket = io();        
+          socket.emit('chat message', "Hello Monaco!");
+  
+          socket.on('chat message', function(msg){
+            console.log("message", msg);
+            window.talk(msg);
+          });        
+        });
+      </script>
+</body>
+</html>

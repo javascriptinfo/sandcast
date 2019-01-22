@@ -1,0 +1,45 @@
+{
+  "name": "sandcastle",
+  "version": "0.0.1-alfa",
+  "description": "monaco cold brew",
+  "main": "index.js",
+  "typings": "./index.d.ts",
+  "scripts": {
+    "build": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js",
+    "start": "node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tbd"
+  },
+  "keywords": [
+    "sandbox",
+    "monaco",
+    "editor"
+  ],
+  "author": "javascript.ru",
+  "license": "MIT",
+  "bugs": {
+    "url": "http://tbd.com"
+  },
+  "homepage": "http://tbdread.me",
+  "peerDependencies": {
+    "webpack": "^4.5.0",
+    "monaco-editor": "^0.15.1",
+    "socket.io": "^1.7.3",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "@types/webpack": "^4.4.19",
+    "css-loader": "^1.0.1",
+    "monaco-editor": "^0.15.6",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "monaco-editor-webpack-plugin": "^1.7.0"
+  },
+  "dependencies": {
+    "socket.io": "^1.7.3",
+    "express": "^4.15.2"
+  }
+}
